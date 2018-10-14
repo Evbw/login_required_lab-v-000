@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
     if !params[:name].present?
       redirect_to root_path
     else
